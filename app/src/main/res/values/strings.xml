@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">书书网</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_third">Third</string>
+</resources>

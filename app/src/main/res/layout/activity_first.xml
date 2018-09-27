@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    tools:context="com.example.administrator.shushu1.First">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageButton2"
+        android:layout_below="@+id/textView4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_alignParentStart="true" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:text="主页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="#fffefe"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
+    <TextView
+        android:text="我的店铺"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#fffefe"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b"
+        android:id="@+id/imageButton2"
+        android:background="#00000000"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="我的信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#fffefe"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b"
+        android:background="#00000000"
+        android:id="@+id/imageButton3"
+        android:layout_above="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sou"
+        android:id="@+id/imageButton5"
+        android:background="#00000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/imageButton3" />
+
+    <TextView
+        android:text="搜索"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:textColor="#fffefe"
+        android:layout_below="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b"
+        android:id="@+id/imageButton"
+        android:background="#00000000"
+        android:layout_marginStart="17dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入搜索信息"
+        android:ems="10"
+        android:layout_above="@+id/swip_refresh"
+        android:layout_alignStart="@+id/imageButton"
+        android:id="@+id/sousuo"
+        android:layout_toStartOf="@+id/imageButton3" />
+    <ListView
+        android:id="@+id/sousuolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sousuo"
+        android:background="#FFF9F9FA"
+        >
+    </ListView>
+
+
+</RelativeLayout>

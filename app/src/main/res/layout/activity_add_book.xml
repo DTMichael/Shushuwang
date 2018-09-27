@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="书名："
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLength="10"
+        android:hint="请输入书名"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="价格："
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/book_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="请设置书的价格（整数）"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="联系方式："
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/book_lianxifangshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="请输入您的手机号码"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="新旧程度："
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/book_newrank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="书的新旧程度（1-10）"/>
+</LinearLayout>
+
+
+<Button
+    android:id="@+id/take_photo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="拍一张照片" />
+
+<Button
+    android:id="@+id/choose_from_album"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="从相册中选取" />
+<Button
+    android:id="@+id/book_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="确定"/>
+<Button
+    android:id="@+id/back_zhu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="返回"/>
+
+<ImageView
+    android:id="@+id/picture"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>
